@@ -1,0 +1,15 @@
+.slide-container {
+   text-align: center;
+   width: 100%; 
+   height: auto;
+   margin: 0 auto;
+}
+
+.nav {
+    display: none;
+}
+
+.img1 {
+    object-fit: cover;
+    height: 500px;
+}

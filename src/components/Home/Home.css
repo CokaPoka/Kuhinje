@@ -1,0 +1,33 @@
+.home {
+   padding-top: 190px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: -1;
+   width: 100%;
+   }
+
+.wrapper-home {
+   padding: 0 5%;
+}
+
+#test { 
+   background-image: url('../../img/kuhinja4.jpg'); 
+   background-attachment: fixed; 
+   background-size: cover;
+   height:500px; 
+   width:100%;
+   margin: 20px auto; 
+   overflow:auto; 
+   }
+
+.static-img { 
+   background-image: url('../../img/kuhinja2.jpg'); 
+   background-attachment: fixed; 
+   background-size: cover;
+   height:500px; 
+   width:100%;
+   margin: 20px auto; 
+   overflow:auto; 
+   }
