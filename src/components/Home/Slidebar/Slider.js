@@ -1,9 +1,9 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
-import Kitchen1 from '../../../img/kuhinja1.jpg'
-import Kitchen2 from '../../../img/kuhinja2.jpg'
-import Kitchen3 from '../../../img/kuhinja3.jpg'
 import './Slider.css'
+import img1 from '../../../img/kuhinja1.jpg'
+import img2 from '../../../img/kuhinja2.jpg'
+import video from '../../../img/kuhinja-video.mp4'
 
 const properties = {
     duration: 5000,
@@ -11,7 +11,7 @@ const properties = {
     infinite: true,
     indicators: true,
     arrows: false,
-    pauseOnHover: true,
+    pauseOnHover: false,
     onChange: (oldIndex, newIndex) => {
         console.log(`slide transition from ${oldIndex} to ${newIndex}`);
     }
@@ -23,20 +23,32 @@ export const Slideshow = () => {
             <Slide {...properties}>
                 <div className="each-slide">
                     <div className="img-slide">
-                        <img class="img1" src={Kitchen1} alt="img1"></img>
+                        <img className="img-1" src={img1} alt="img1"></img>
+                        <div className="slide-text">
+                            <h1>3D CRTEŽI</h1>
+                        </div>
                     </div>
                 </div>
                 <div className="each-slide">
                     <div className="img-slide">
-                        <img class="img1" src={Kitchen2} alt="img2"></img>
+                        <img class="img-2" src={img2} alt='img2'>
+                        </img>
+                        <div className="slide-text">
+                            <h1>2D CRTEŽI SA MERAMA</h1>
+                        </div>
                     </div>
                 </div>
                 <div className="each-slide">
-                    <div className="img-slide">
-                        <img class="img1" src={Kitchen3} alt="img3"></img>
+                    <div className="video-slide">
+                        <video className="video" autoPlay loop>
+                            <source src={video} type="video/mp4"></source>
+                        </video>
+                        <div className="slide-text">
+                            <h1>ANIMACIJA</h1>
+                        </div> 
                     </div>
                 </div>
             </Slide>
-        </div>
+        </div >
     )
 }

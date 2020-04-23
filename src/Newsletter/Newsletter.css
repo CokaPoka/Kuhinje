@@ -1,0 +1,54 @@
+.newsletter-wrapper {
+    padding-top: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn ease 1.5s;
+
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.newsletter-form {
+    width: 350px
+}
+
+.newsletter-form input {
+    margin: 5px;
+}
+
+.test-mailing {
+    margin-top:40px;
+    color: #145374;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.test-mailing h3 {
+    margin-bottom:30px;
+}
+
+.btn-submit {
+    background-color:#ff7315;
+    border: none;
+    color: #145374;
+}
+
+.newsletter-img {
+    width: 60%;
+    height: auto;
+
+    
+}

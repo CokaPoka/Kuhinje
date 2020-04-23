@@ -12,6 +12,7 @@ const SideDrawer = (props) => {
                 <li><a href="/">home</a></li>
                 <li><a href="/gallery">gallery</a></li>
                 <li><a href="/designing">designing</a></li>
+                <li><a href="/newsletter">newsletter</a></li>
             </ul>
         </nav>
     )

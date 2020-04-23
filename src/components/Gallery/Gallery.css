@@ -6,3 +6,13 @@
    left: 0;
    z-index:-1;
 }
+
+#test { 
+   background-image: url('../../img/kuhinja4.jpg'); 
+   background-attachment: fixed; 
+   background-size: cover;
+   height:500px; 
+   width:100%;
+   margin: 20px auto; 
+   overflow:auto; 
+}

@@ -1,40 +1,64 @@
 .toolbar {
-    position: sticky;
-    top: 120px;
+    position: fixed;
+    top: 0px;
     left: 0;
     width: 100%;
-    background-color:white;
-    height: 75px;
+    background-color:rgba(255, 254, 254);
+    height: 80px;
+    z-index: 2;
 }
 
 .toolbar-navigation {
     display: flex;
-    height: 70px;
+    height: 80px;
     margin: 0;
+    padding: 0 20px;
     justify-content: center;
+    animation: fadeIn ease 1.5s;
+
 }
 
-.toolbar-logo a {
-    margin-left: 1rem;
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    height: 100%;
+p {
+  color: #145374;
+}
+
+p:hover {
+  color: #ff7315;
 }
 
 .img-logo {
     height: 70px;
     width: auto;
 }
+.logo {
+  width: 300px;
+  height: 80px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn ease 1.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
+
+
 
 .toolbar-navigation-items {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-end;
     height: 100%;
-    width: 300px;
+    width: 600px;
 }
 
 .toolbar-navigation-items ul {
@@ -48,7 +72,7 @@
 
 
 .control-li {
-    width: 70px;
+    width: 100px;
     height: 65px;
     display: flex;
     justify-content: space-between;
@@ -77,6 +101,13 @@
     background-size: cover;
 }
 
+.newsletter-icon {
+    height: 40px;
+    width: 40px;
+    background-image: url('../../img/newsletter.png');
+    background-size: cover;
+}
+
 .toolbar-navigation-items a {
    color: #145374;
    text-decoration: none;
@@ -92,23 +123,29 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    text-align: center;
 }
+
+/* hr {
+    margin: 0;
+     width: 100%;
+    border: solid 1px #145374;
+} */
 
 @media (max-width: 768px) {
     .toolbar-navigation-items {
         display: none;
     }
-    .toolbar-logo {
+    .logo {
         display: none;
     }
-
+    .spacer {
+        display: none;
+    }
 }
 
 @media (min-width: 769px) {
     .toolbar-toggle-button {
         display: none;
-    }
-    .toolbar-logo a {
-        margin-left: 0;
     }
 }
